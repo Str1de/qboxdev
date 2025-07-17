@@ -1,9 +1,13 @@
+![ox_target-restyle](https://github.com/user-attachments/assets/c3cb8484-e5c5-4131-a047-e0c604ad123d)
+<sub>[Video Preview](https://www.youtube.com/watch?v=-aE-QwGIbPo)</sub>
+
+
 # ox_target
 
-![](https://img.shields.io/github/downloads/communityox/ox_target/total?logo=github)
-![](https://img.shields.io/github/downloads/communityox/ox_target/latest/total?logo=github)
-![](https://img.shields.io/github/contributors/communityox/ox_target?logo=github)
-![](https://img.shields.io/github/v/release/communityox/ox_target?logo=github) 
+![](https://img.shields.io/github/downloads/overextended/ox_target/total?logo=github)
+![](https://img.shields.io/github/downloads/overextended/ox_target/latest/total?logo=github)
+![](https://img.shields.io/github/contributors/overextended/ox_target?logo=github)
+![](https://img.shields.io/github/v/release/overextended/ox_target?logo=github) 
 
 
 A performant and flexible standalone "third-eye" targeting resource, with additional functionality for supported frameworks.
@@ -14,11 +18,11 @@ To improve many design flaws, ox_target has been written from scratch and drops 
 
 ## 📚 Documentation
 
-https://coxdocs.dev/ox_target
+https://overextended.dev/ox_target
 
 ## 💾 Download
 
-https://github.com/communityox/ox_target/releases/latest/download/ox_target.zip
+https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
 
 ## ✨ Features
 
