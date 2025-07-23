@@ -9,6 +9,7 @@
     "vehicle_driving_fast": "This vehicle is going too fast.",
     "seat_occupied": "This seat is occupied.",
     "race_harness_on": "You have a racing harness. You cannot switch.",
+    "not_in_vehicle": "You are not in a vehicle.",
     "obj_not_found": "Unable to create the requested object.",
     "not_near_ambulance": "You are not near an ambulance.",
     "far_away": "You are too far away.",

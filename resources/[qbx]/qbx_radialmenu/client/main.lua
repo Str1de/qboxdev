@@ -106,35 +106,16 @@ function setupVehicleMenu(seat)
         id = 'vehicle',
         label = locale('options.vehicle'),
         icon = 'car',
-        menu = 'vehicleMenu'
-    }
-
-    local vehicleItems = {{
-        id = 'vehicle-flip',
-        label = locale('options.flip'),
-        icon = 'car-burst',
         onSelect = function()
-            TriggerEvent('radialmenu:flipVehicle')
+            -- Check if player is in a vehicle before opening paradise_vehmenu
+            if cache.vehicle then
+                ExecuteCommand('vehmenu')
+            else
+                exports.qbx_core:Notify(locale('error.not_in_vehicle'), 'error')
+            end
             lib.hideRadial()
         end
-    }}
-
-    vehicleItems[#vehicleItems + 1] = convert(config.vehicleDoors)
-
-    vehicleItems[#vehicleItems + 1] = convert(config.vehicleWindows)
-
-    if config.enableExtraMenu then
-        vehicleItems[#vehicleItems + 1] = convert(config.vehicleExtras)
-    end
-
-    if config.vehicleSeats and seat then
-        vehicleItems[#vehicleItems + 1] = config.vehicleSeats
-    end
-
-    lib.registerRadial({
-        id = 'vehicleMenu',
-        items = vehicleItems
-    })
+    }
 
     lib.addRadialItem(vehicleMenu)
 end

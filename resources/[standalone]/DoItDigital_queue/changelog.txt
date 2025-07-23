@@ -1,0 +1,20 @@
+---06/21/2025 16:35:15 PM---
+improved discord logging
+
+---08/27/2025, 12:26:33 AM---
+Added support for mapping Discord roles to priority levels in the queue system.
+Fully integrated with the existing identifier-based queue logic — no changes required to your current identifier structure or queue config.
+Permision System Updated (can now give access to certain commands only)
+---04/07/2025, 12:26:33 AM---
+Permision System Updated (can now give access to certain commands only)
+---04/04/2025, 19:27:12 PM---
+Added Total Players With Priority Info In The Management UI
+Added Manage Priority Players In The Management UI (you can see players with priotity , their expire time  and also remove it)
+UI can now close pressing escape
+Added export to take users priority and expire time ( example at editable.lua)
+---04/04/2025, 2:27:37 PM---
+Added discord identifiers support
+Added editable.lua
+---03/28/2025, 3:28:37 PM---
+Added Search function on queue list
+Fixed connect glitch when player spams leave and join queue in order to bypass our system
