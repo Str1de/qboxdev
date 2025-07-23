@@ -44,7 +44,6 @@ const UsefulControls: React.FC<Props> = ({ infoVisible, setInfoVisible }) => {
                     </svg>
                   </div>
                 </div>
-                <div className="gradient-line" />
                 <div className="useful-controls-content-wrapper">
                   <p>
                     <kbd>RMB</kbd>

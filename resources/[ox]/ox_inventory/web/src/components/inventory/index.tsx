@@ -13,8 +13,6 @@ import { closeTooltip } from '../../store/tooltip';
 import InventoryContext from './InventoryContext';
 import { closeContextMenu } from '../../store/contextMenu';
 import Fade from '../utils/transitions/Fade';
-import BackgroundGradientOverlay from './BackgroundGradientOverlay';
-/* import HotSlots from './HotSlots'; */
 
 const Inventory: React.FC = () => {
   const [inventoryVisible, setInventoryVisible] = useState(false);
@@ -45,18 +43,10 @@ const Inventory: React.FC = () => {
   return (
     <>
       <Fade in={inventoryVisible}>
-        <BackgroundGradientOverlay />
         <div className="inventory-wrapper">
-          <div className="inventory-row">
-            <div className="inventory-left">
-              {/* <HotSlots/> */}
-              <LeftInventory />
-              <InventoryControl />
-            </div>
-            <div className="inventory-right">
-              <RightInventory />
-            </div>
-          </div>
+          <LeftInventory />
+          <InventoryControl />
+          <RightInventory />
           <Tooltip />
           <InventoryContext />
         </div>
