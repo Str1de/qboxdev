@@ -58,12 +58,12 @@ input[type='number']::-webkit-outer-spin-button {
 
 .context-menu-list {
   min-width: 200px;
-  background-color: $mainColor;
+  background-color: #333333;
   color: $textColor;
   padding: 4px;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-style: inset;
-  border-width: 1px;
+  border-color: #00ccff;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 4px;
   outline: none;
   display: flex;
@@ -75,7 +75,7 @@ input[type='number']::-webkit-outer-spin-button {
   border-radius: 4px;
   background-color: transparent;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   color: $textColor;
   display: flex;
   justify-content: space-between;
@@ -85,6 +85,7 @@ input[type='number']::-webkit-outer-spin-button {
   }
   &:hover {
     background-color: $secondaryColorHighlight;
+    border-color: #00ccff;
     cursor: pointer;
   }
 }
@@ -138,13 +139,13 @@ button:active {
 
   .inventory-control-input {
     transition: 200ms;
-    padding: 16px 8px;
+    padding: 10px 10px;
     border-radius: 2.5%;
     font-family: $mainFont;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     outline: none;
-    border: 2px solid #9ACD32;
+    border: 2px solid #00ccff;
     color: #fff;
     background-color: $secondaryColor;
     &:focus-within {
@@ -261,7 +262,7 @@ button:active {
   flex-direction: column;
   gap: 4px;
   background: rgba(39,39,39,.9);
-  border: 2px solid #9ACD32;
+  border: 2px solid #00ccff;
   /* padding: 15px; */
   box-sizing: border-box;
   box-shadow: -1px -13px 9px -15px #f5f5f5;
@@ -281,7 +282,7 @@ button:active {
   flex-direction: column;
   gap: 4px;
   background: rgba(39,39,39,.9);
-  border: 2px solid #9ACD32;
+  border: 2px solid #00ccff;
   /* padding: 15px; */
   box-sizing: border-box;
   /* box-shadow: 2px -3px 10px 1px #f5f5f5; */
