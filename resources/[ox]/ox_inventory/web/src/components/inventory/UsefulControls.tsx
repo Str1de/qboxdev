@@ -70,6 +70,11 @@ const UsefulControls: React.FC<Props> = ({ infoVisible, setInfoVisible }) => {
                     <br />
                     {Locale.ui_ctrl_shift_lmb}
                   </p>
+                  <p>
+                    <kbd>SCROLL MIDDLE CLICK</kbd>
+                    <br />
+                    {Locale.ui_middle_click}
+                  </p>
                   <div style={{ textAlign: 'right' }}>🐂</div>
                 </div>
               </div>

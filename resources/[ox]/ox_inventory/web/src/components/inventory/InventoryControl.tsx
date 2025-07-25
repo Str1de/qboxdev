@@ -47,6 +47,15 @@ const InventoryControl: React.FC = () => {
             onChange={inputHandler}
             min={0}
           />
+          <button className="inventory-control-button" ref={use}>
+            {Locale.ui_use || 'Use'}
+          </button>
+          <button className="inventory-control-button" ref={give}>
+            {Locale.ui_give || 'Give'}
+          </button>
+          <button className="inventory-control-button" onClick={() => fetchNui('exit')}>
+            {Locale.ui_close || 'Close'}
+          </button>
         </div>
       </div>
 

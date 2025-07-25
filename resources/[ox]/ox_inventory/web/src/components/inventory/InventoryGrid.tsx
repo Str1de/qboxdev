@@ -37,7 +37,7 @@ const InventoryGrid: React.FC<{ inventory: Inventory }> = ({ inventory }) => {
           </div>
           <WeightBar percent={inventory.maxWeight ? (weight / inventory.maxWeight) * 100 : 0} />
         </div>
-        <div className="inventory-grid-container" ref={containerRef}>
+        <div className="inventory-grid-container" ref={containerRef} style={{overflow: 'auto'}} onMouseDown={(e) => {if (e.button === 1) {e.preventDefault(); }}}>
           <>
             {inventory.items.slice(0, (page + 1) * PAGE_SIZE).map((item, index) => (
               <InventorySlot

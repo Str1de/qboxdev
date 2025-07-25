@@ -117,6 +117,19 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
     }
   };
 
+  const handleMouseUp = (event: React.MouseEvent<HTMLDivElement>) => {
+    // Middle mouse button (scroll click)
+    if (
+      event.button === 1 &&
+      isSlotWithItem(item) &&
+      inventoryType === 'player'
+    ) {
+      event.preventDefault();
+      dispatch(closeTooltip());
+      onUse(item);
+    }
+  };
+
   const refs = useMergeRefs([connectRef, ref]);
 
   return (
@@ -124,6 +137,7 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
       ref={refs}
       onContextMenu={handleContext}
       onClick={handleClick}
+      onMouseUp={handleMouseUp}
       className="inventory-slot"
       style={{
         filter:
@@ -132,7 +146,7 @@ const InventorySlot: React.ForwardRefRenderFunction<HTMLDivElement, SlotProps> =
             : undefined,
         opacity: isDragging ? 0.4 : 1.0,
         backgroundImage: `url(${item?.name ? getItemUrl(item as SlotWithItem) : 'none'}`,
-        border: isOver ? '1px dashed rgba(255,255,255,0.4)' : '',
+        border: isOver ? '1px solid rgba(255,255,255,0.4)' : '',
       }}
     >
       {isSlotWithItem(item) && (
