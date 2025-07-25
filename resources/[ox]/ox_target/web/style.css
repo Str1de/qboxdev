@@ -3,7 +3,9 @@
 
 :root {
   --color-default: #F2F2F2;
-  --color-hover: #F2F2F2;
+  --color-hover: #00ccff;
+  --color-accent: #00ccff;
+  --color-background: #666666;
 }
 
 body {
@@ -50,7 +52,7 @@ p {
 }
 
 .eye-hover .eye-fill {
-  fill: #FFFFFF;
+  fill: var(--color-accent);
 }
 
 .circle-hover {
@@ -70,53 +72,48 @@ p {
   justify-content: flex-start;
   align-items: center;
   font-family: "Montserrat";
-  background: linear-gradient(
-    to right,
-    rgba(23, 23, 23, 0.9) 0%,
-    rgba(23, 23, 23, 0.9) 100%
-  );
-  font-size: 13px;
+  background: rgba(102, 102, 102, 0.9);
+  font-size: 12px;
   vertical-align: middle;
-  border: 1px solid #C1C1C1;
-  border-radius: 4px;
-  margin-bottom: 2px;
-  padding: 2.5px;
-  transition: 300ms;
+  border: 2px solid rgba(0, 204, 255, 0.5);
+  border-radius: 6px;
+  margin-bottom: 6px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
   transform-origin: left top;
   scale: 1;
-  height: 22pt;
+  min-height: 16px;
   top: 0;
-  width: 100%;
+  width: fit-content;
+  max-width: 250px;
   word-wrap: break-word;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .option-container:hover {
-  background: linear-gradient(
-    to right,
-    rgba(36, 36, 36, 0.9) 0%,
-    rgba(23, 23, 23, 0.9) 100%
-  );
-  transform-origin: left top;
-  color: var(--color-hover);
-  margin-left: 4px;
+  background: rgba(0, 204, 255, 0.9);
+  transform: scale(1.02);
+  color: #ffffff;
+  border-color: rgba(0, 204, 255, 0.8);
+  box-shadow: 0 6px 20px rgba(0, 204, 255, 0.3);
 }
 
 .option-icon {
   font-size: 16px;
   margin-right: 10px;
-  margin-left: 5px;
+  margin-left: 0px;
   color: var(--color-default);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .option-container:hover .option-icon {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+  color: #ffffff;
 }
 
 .option-label {
-  font-weight: 400;
+  font-weight: 500;
   margin-right: 10px;
+  font-size: 12px;
 }
 
 .shadow-circle {
@@ -126,7 +123,7 @@ p {
   transform: translate(-50%, -50%);
   width: 22px;
   height: 22px;
-  background: rgba(23, 23, 23, 0.4);
+  background: rgba(102, 102, 102, 0.6);
   border-radius: 50%;
   z-index: -1;
   filter: blur(2px);
