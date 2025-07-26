@@ -75,7 +75,7 @@ const UsefulControls: React.FC<Props> = ({ infoVisible, setInfoVisible }) => {
                     <br />
                     {Locale.ui_middle_click}
                   </p>
-                  <div style={{ textAlign: 'right' }}>🐂</div>
+                  <div style={{ textAlign: 'right' }}></div>
                 </div>
               </div>
             </FloatingFocusManager>

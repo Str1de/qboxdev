@@ -10,7 +10,7 @@ $gridCols: 5;
 $gridRows: 5;
 $gridSize: 12vh;
 $gridGap: 2px;
-$containerSize: calc(#{$gridRows} * #{$gridSize + 0.78vh} + #{$gridRows} * #{$gridGap});
+$containerSize: calc(#{$gridRows} * #{$gridSize + 0.10vh} + #{$gridRows} * #{$gridGap});
 
 body {
   margin: 0;
@@ -144,28 +144,33 @@ button:active {
     align-items: center;
   }
 
-  .inventory-control-input {
-    transition: 200ms;
-    padding: 16px 8px;
-    border-radius: 2.5%;
-    font-family: $mainFont;
-    font-size: 10px;
-    text-align: center;
-    outline: none;
-    border: 2px solid transparent;
-    border-image: linear-gradient(0deg, #00ccff, #0051ff);
-    border-image-slice: 1;
-    color: #fff;
-    background-color: $mainColor;
-    &:focus-within {
-      background-color: $secondaryColorDark;
-    }
+.inventory-control-input {
+  transition: 200ms;
+  padding: 13px 8px; // tighter padding to balance larger font
+  width: 100px; // fixed width to avoid expansion (tweak if needed)
+  border-radius: 2.5%;
+  font-family: $mainFont;
+  font-size: 14px; // bigger, readable numbers
+  text-align: center;
+  outline: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-image: linear-gradient(0deg, #00ccff, #0051ff);
+  border-image-slice: 1;
+  color: #fff;
+  background-color: $secondaryColorLight;
+  box-sizing: border-box;
+
+  &:focus-within {
+    background-color: $secondaryColorDark;
   }
+}
+
 
   .inventory-control-button {
     font-size: 15px;
     color: #fff;
-    background: $mainColor;
+    background: $secondaryColorLight;
     transition: 200ms;
     padding: 12px 8px;
     border-radius: 2.5%;
@@ -185,11 +190,12 @@ button:active {
 }
 
 .useful-controls-dialog {
-  background-color: $mainColor;
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   color: $textColor;
   width: 450px;
   display: flex;
@@ -207,12 +213,11 @@ button:active {
 }
 
 .useful-controls-dialog-title {
-  display: flex;
+  display:flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  
 }
 
 .useful-controls-dialog-close {
@@ -264,7 +269,7 @@ button:active {
   align-items: center;
   fill: white;
   border-radius: 5% !important;
-  background-color: $secondaryColor !important;
+  background-color: $secondaryColorLight;
   &:hover {
     border: 2px solid transparent;
     border-image: linear-gradient(0deg, #0051ff, #00ccff);
@@ -329,6 +334,13 @@ button:active {
 //   right: 160px;
 // }
 
+.inventory-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calc($gridGap * 2);
+  height: $containerSize;
+}
+
 .inventory-grid-header-wrapper {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -358,7 +370,7 @@ button:active {
 
 // inventory slots
 .inventory-slot {
-  background-color: rgba(12, 12, 12, 0.5);
+  background-color: $secondaryColorLight;
   background-repeat: no-repeat;
   background-position: center;
   // border-radius: 2.5%;
