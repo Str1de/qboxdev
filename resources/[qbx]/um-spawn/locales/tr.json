@@ -1,0 +1,56 @@
+{
+    "UI": {
+        "main": {
+            "spawn": "DOĞMA",
+            "last": {
+                "first": "Son",
+                "second": "Konum",
+                "words": "Unutma, nerede doğduğun önemli değil, önemli olan başarılı olmak"
+            },
+            "my": "Benim",
+            "back": "Geri"
+        },
+        "menu": {
+            "map": "Harita",
+            "apart": {
+                "title": "Apartmanlar",
+                "desc": "Burada apartmanlarınızı görebilir ve yönetebilirsiniz"
+            },
+            "house": {
+                "title": "Evler",
+                "desc": "Burada evlerinizi görebilir ve yönetebilirsiniz"
+            },
+            "bookmarks": {
+                "title": "Yer İmleri",
+                "desc": "Burada yer imlerinizi görebilir ve yönetebilirsiniz"
+            },
+            "cinematic": "Sinematik"
+        },
+        "rent": {
+            "title": "Apartman Seç",
+            "button": "Apartman odası kirala"
+        }
+    },
+    "Bookmark": {
+        "input": {
+            "title": "Konum Ekle",
+            "first": {
+                "name": "Konum Adı",
+                "desc": "Özel konumunuzu adlandırın"
+            },
+            "second": {
+                "name": "Konum Resmi (URL)",
+                "desc": "Buraya resim linki ekleyin | sadece (discord veya imgur)"
+            }
+        },
+        "dialog": {
+            "header": "Yer imi ödemesi",
+            "content": "Bu konumu yer imlerinize eklemek için %s$ ödemeyi kabul ediyor musunuz?"
+        },
+        "error": {
+            "title": "Yer İmleri",
+            "link": "Sadece discord veya imgur linki",
+            "money": "Yeterli paranız yok"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "UI": {
+        "main": {
+            "spawn": "APARECER",
+            "last": {
+                "first": "Último",
+                "second": "Ubicación",
+                "words": "Recuerda, no importa dónde naciste, lo importante es tener éxito"
+            },
+            "my": "Mi",
+            "back": "Atrás"
+        },
+        "menu": {
+            "map": "Mapa",
+            "apart": {
+                "title": "Apartamentos",
+                "desc": "Aquí puedes ver y gestionar tus apartamentos"
+            },
+            "house": {
+                "title": "Casas",
+                "desc": "Aquí puedes ver y gestionar tus casas"
+            },
+            "bookmarks": {
+                "title": "Marcadores",
+                "desc": "Aquí puedes ver y gestionar tus marcadores"
+            },
+            "cinematic": "Cinemático"
+        },
+        "rent": {
+            "title": "Seleccionar Apartamentos",
+            "button": "Alquilar una habitación de apartamento"
+        }
+    },
+    "Bookmark": {
+        "input": {
+            "title": "Agregar Ubicación",
+            "first": {
+                "name": "Nombre de Ubicación",
+                "desc": "Nombra tu ubicación especial"
+            },
+            "second": {
+                "name": "Imagen de Ubicación (URL)",
+                "desc": "Inserta un enlace de imagen aquí | solo (discord o imgur)"
+            }
+        },
+        "dialog": {
+            "header": "Pago de marcadores",
+            "content": "¿Estás de acuerdo en pagar %s$ para agregar esta ubicación a tus marcadores?"
+        },
+        "error": {
+            "title": "Marcadores",
+            "link": "Solo enlace de discord o imgur",
+            "money": "No tienes suficiente dinero"
+        }
+    }
+}

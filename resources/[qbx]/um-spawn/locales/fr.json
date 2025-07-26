@@ -1,0 +1,56 @@
+{
+    "UI": {
+        "main": {
+            "spawn": "APPARAÎTRE",
+            "last": {
+                "first": "Dernier",
+                "second": "Emplacement",
+                "words": "Souviens-toi, peu importe où tu es né, l'important est de réussir"
+            },
+            "my": "Mon",
+            "back": "Retour"
+        },
+        "menu": {
+            "map": "Carte",
+            "apart": {
+                "title": "Appartements",
+                "desc": "Ici vous pouvez voir et gérer vos appartements"
+            },
+            "house": {
+                "title": "Maisons",
+                "desc": "Ici vous pouvez voir et gérer vos maisons"
+            },
+            "bookmarks": {
+                "title": "Signets",
+                "desc": "Ici vous pouvez voir et gérer vos signets"
+            },
+            "cinematic": "Cinématique"
+        },
+        "rent": {
+            "title": "Sélectionner Appartements",
+            "button": "Louer une chambre d'appartement"
+        }
+    },
+    "Bookmark": {
+        "input": {
+            "title": "Ajouter Emplacement",
+            "first": {
+                "name": "Nom de l'emplacement",
+                "desc": "Nommez votre emplacement spécial"
+            },
+            "second": {
+                "name": "Image de l'emplacement (URL)",
+                "desc": "Insérez un lien d'image ici | seulement (discord ou imgur)"
+            }
+        },
+        "dialog": {
+            "header": "Paiement des signets",
+            "content": "Acceptez-vous de payer %s$ pour ajouter cet emplacement à vos signets?"
+        },
+        "error": {
+            "title": "Signets",
+            "link": "Seulement lien discord ou imgur",
+            "money": "Vous n'avez pas assez d'argent"
+        }
+    }
+}

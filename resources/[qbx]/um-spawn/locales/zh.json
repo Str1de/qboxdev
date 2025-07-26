@@ -1,0 +1,56 @@
+{
+  "UI": {
+    "main": {
+      "spawn": "出生",
+      "last": {
+        "first": "最后",
+        "second": "位置",
+        "words": "记住，你在哪里出生并不重要，重要的是成功"
+      },
+      "my": "我的",
+      "back": "返回"
+    },
+    "menu": {
+      "map": "地图",
+      "apart": {
+        "title": "公寓",
+        "desc": "在这里您可以查看和管理您的公寓"
+      },
+      "house": {
+        "title": "房屋",
+        "desc": "在这里您可以查看和管理您的房屋"
+      },
+      "bookmarks": {
+        "title": "书签",
+        "desc": "在这里您可以查看和管理您的书签"
+      },
+      "cinematic": "电影"
+    },
+    "rent": {
+      "title": "选择公寓",
+      "button": "租一间公寓房间"
+    }
+  },
+  "Bookmark": {
+    "input": {
+      "title": "添加位置",
+      "first": {
+        "name": "位置名称",
+        "desc": "为您的特殊位置命名"
+      },
+      "second": {
+        "name": "位置图片 (URL)",
+        "desc": "在此处插入图片链接 | 仅限 (discord 或 imgur)"
+      }
+    },
+    "dialog": {
+      "header": "书签付费",
+      "content": "您同意支付%s$将此位置添加到您的书签吗？"
+    },
+    "error": {
+      "title": "书签",
+      "link": "仅限 discord 或 imgur 链接",
+      "money": "您没有足够的钱"
+    }
+  }
+}

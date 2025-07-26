@@ -1,24 +1,13 @@
 fx_version 'cerulean'
-author 'Ryze Roadshop'
-description 'Ryze Roadshop Loading Screen'
-version '1.0.0'
-loadscreen_cursor 'yes'
-game 'gta5'
-loadscreen 'html/index.html'
+games { 'gta5' }
 lua54 'yes'
+client_script "@mythic-base/components/cl_error.lua"
+client_script "@mythic-pwnzor/client/check.lua"
+
+loadscreen 'ui/html/index.html'
+
+loadscreen_manual_shutdown 'yes'
 
 files {
-    'html/index.html',
-    'html/style.css',
-    'html/img/arrow.svg',
-    'html/img/btm-bar.svg',
-    'html/img/hex.svg',
-    'html/img/np.png',
-    'html/img/tp-bar.svg',
-    'html/img/twitter.svg',
-    'html/img/youtube.svg',
-    'html/img/vod.mp4'
+    "ui/html/*.*",
 }
-
-client_script 'client.lua'
-server_script 'server.lua'
