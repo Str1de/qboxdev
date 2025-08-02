@@ -3,9 +3,7 @@
 
 :root {
   --color-default: #F2F2F2;
-  --color-hover: #00ccff;
-  --color-accent: #00ccff;
-  --color-background: #666666;
+  --color-hover: #F2F2F2;
 }
 
 body {
@@ -52,11 +50,11 @@ p {
 }
 
 .eye-hover .eye-fill {
-  fill: var(--color-accent);
+  fill: url(#spinningGradient);
 }
 
 .circle-hover {
-  fill: url(#spinningGradient);
+  fill: rgba(23, 23, 23, 0.9);
 }
 
 #options-wrapper {
@@ -72,48 +70,46 @@ p {
   justify-content: flex-start;
   align-items: center;
   font-family: "Montserrat";
-  background: rgba(102, 102, 102, 0.9);
-  font-size: 12px;
+  font-size: 13px;
   vertical-align: middle;
-  border: 2px solid rgba(0, 204, 255, 0.5);
-  border-radius: 6px;
-  margin-bottom: 6px;
-  padding: 8px 16px;
-  transition: all 0.3s ease;
+  background: linear-gradient(#242424, #242424) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  padding: 2.5px;
+  transition: 300ms;
   transform-origin: left top;
   scale: 1;
-  min-height: 16px;
+  height: 22pt;
   top: 0;
-  width: fit-content;
-  max-width: 250px;
+  width: 100%;
   word-wrap: break-word;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .option-container:hover {
-  background: rgba(0, 204, 255, 0.9);
-  transform: scale(1.02);
-  color: #ffffff;
-  border-color: rgba(0, 204, 255, 0.8);
-  box-shadow: 0 6px 20px rgba(0, 204, 255, 0.3);
+  background: linear-gradient(#242424, #242424) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box;
+  border: 2px solid transparent;
+  transform-origin: left top;
+  color: var(--color-hover);
+  margin-left: 4px;
 }
 
 .option-icon {
   font-size: 16px;
   margin-right: 10px;
-  margin-left: 0px;
+  margin-left: 5px;
   color: var(--color-default);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .option-container:hover .option-icon {
-  color: #ffffff;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .option-label {
-  font-weight: 500;
+  font-weight: 400;
   margin-right: 10px;
-  font-size: 12px;
 }
 
 .shadow-circle {
@@ -123,7 +119,7 @@ p {
   transform: translate(-50%, -50%);
   width: 22px;
   height: 22px;
-  background: rgba(102, 102, 102, 0.6);
+  background: rgba(23, 23, 23, 0.4);
   border-radius: 50%;
   z-index: -1;
   filter: blur(2px);
