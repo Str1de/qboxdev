@@ -16,18 +16,21 @@ interface Props {
 const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
   buttonContainer: {
     backgroundColor: theme.colors.black2[5],
-    borderRadius: theme.radius.sm,
     padding: 2,
     height: 60,
     scrollMargin: 8,
-    border: `1px solid ${theme.colors.grey[5]}`,
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: `1px solid transparent`,
+    borderRadius: `4px`,
     transition: 'background 0.3s ease',
     '&:hover': {
-      background: `linear-gradient(to right, rgba(36,36,36,0.9), rgba(23,23,23,0.9))`,
+      background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box`,
+      border: `1px solid transparent`,
       outline: 'none',
     },
     '&:focus': {
-      background: `linear-gradient(to right, rgba(36,36,36,0.9), rgba(23,23,23,0.9))`,
+      background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box`,
+      border: `1px solid transparent`,
       outline: 'none',
     },
   },
@@ -38,6 +41,7 @@ const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
     paddingLeft: 5,
     paddingRight: 12,
     height: '100%',
+    
   },
   iconContainer: {
     display: 'flex',

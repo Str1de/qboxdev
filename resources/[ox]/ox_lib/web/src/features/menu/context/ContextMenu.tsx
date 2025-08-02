@@ -32,12 +32,14 @@ const useStyles = createStyles((theme) => ({
     borderRadius: 4,
     flex: '1 85%',
     backgroundColor: theme.colors.black2[5],
-    border: `1px solid ${theme.colors.grey[5]}`,
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: '1px solid transparent',
   },
   titleText: {
     color: theme.colors.white[5],
     padding: 6,
     textAlign: 'center',
+    
   },
   buttonsContainer: {
     height: 560,

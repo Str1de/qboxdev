@@ -22,27 +22,30 @@ const useStyles = createStyles((theme) => ({
     color: theme.colors.white[5],
   },
   button_confirm: {
-    backgroundColor: theme.colors.black[5],
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: '2px solid transparent',
     color: theme.colors.white[5],
     transition: 'background-color 0.3s ease, color 0.3s ease',
     '&:hover': {
-      backgroundColor: theme.colors.green[5],
-      color: theme.colors.black[5],
+      background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box`,
+      border: '2px solid transparent',
     },
   },
   button_cancel: {
-    backgroundColor: theme.colors.black[5],
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: '2px solid transparent',
     color: theme.colors.white[5],
     transition: 'background-color 0.3s ease, color 0.3s ease',
     '&:hover': {
-      backgroundColor: theme.colors.red[5],
+      background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box`,
+      border: '2px solid transparent',
       color: theme.colors.white[5],
     },
   },
   gradientLine: {
     height: '3px',
     width: '100%',
-    background: `linear-gradient(to right, ${theme.colors.blue[5]}, ${theme.colors.pink[5]})`,
+    background: `linear-gradient(to right, #00ccff, #0051ff)`,
     marginTop: theme.spacing.xs,
     marginBottom: theme.spacing.md
   },

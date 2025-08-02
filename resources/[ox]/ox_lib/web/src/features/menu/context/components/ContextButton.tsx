@@ -29,12 +29,11 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     fontWeight: 500,
     width: '100%',
     padding: 10,
-    backgroundColor: params.readOnly ? 'rgba(44, 44, 44, 0.9)' : theme.colors.black2[5],
-    border: params.readOnly ? '1px solid #C1C1C1' : `1px solid ${theme.colors.grey[5]}`,
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: '1px solid transparent',
     '&:hover': {
-      background: params.readOnly
-        ? 'linear-gradient(90deg, rgba(44, 44, 44, 0.9), rgba(83, 83, 83, 0.9))'
-        : `linear-gradient(to right, rgba(36,36,36,0.9), rgba(23,23,23,0.9))`,
+      background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box`,
+      border: '1px solid transparent',
       cursor: params.readOnly ? 'unset' : 'pointer',
     },
     '&:active': {

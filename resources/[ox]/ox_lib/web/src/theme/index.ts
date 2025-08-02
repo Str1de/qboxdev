@@ -32,7 +32,7 @@ const colors = {
   ] as [string, string, string, string, string, string, string, string, string, string],
   yume_blue: [
     '#EDF5FF', '#D0E4FF', '#B3D4FF', '#96C3FF', '#79B2FF',
-    '#2B78FC', '#235FCA', '#1B4798', '#123066', '#0A1834',
+    '#2B78FC', '#0051ff', '#1B4798', '#123066', '#0A1834',
   ] as [string, string, string, string, string, string, string, string, string, string],
   yume_green: [
     '#E5FAF0', '#BFF3D9', '#9AEBBF', '#75E4A8', '#50DD91',

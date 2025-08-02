@@ -6,12 +6,12 @@ import React from 'react';
 const useStyles = createStyles((theme) => ({
   container: {
     textAlign: 'center',
-    borderLeft: `1px solid ${theme.colors.grey[5]}`,
-    borderRight: `1px solid ${theme.colors.grey[5]}`,
-    borderTop: `1px solid ${theme.colors.grey[5]}`,
+    // background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    // borderLeft: `1px solid transparent`,
+    // borderRight: `1px solid transparent`,
+    // borderTop: `1px solid transparent`,
     borderTopLeftRadius: theme.radius.sm,
     borderTopRightRadius: theme.radius.sm,
-    backgroundColor: theme.colors.black2[5],
     height: 'auto',
     width: 384,
     paddingTop: 20,
@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
   line: {
     width: '100%',
     height: 3,
-    background: `linear-gradient(to right, ${theme.colors.blue[5]}, ${theme.colors.pink[5]})`,
+    background: `linear-gradient(to right, #00ccff, #0051ff)`,
   },
 }));
 

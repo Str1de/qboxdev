@@ -100,8 +100,8 @@ const CircleProgressbar: React.FC = () => {
               <defs>
                 {/* Honestly this is the best I can come up with */}
                 <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="50" y2="100">
-                  <stop offset="0%" stopColor="#79B2FF" />
-                  <stop offset="100%" stopColor="#FF4F87" />
+                  <stop offset="0%" stopColor="#0051ff" />
+                  <stop offset="100%" stopColor="#00ccff" />
                 </linearGradient>
               </defs>
             </svg>

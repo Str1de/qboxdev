@@ -18,8 +18,12 @@ const useStyles = createStyles((theme, params: { canClose?: boolean }) => ({
     textAlign: 'center',
     justifyContent: 'center',
     padding: 2,
-    backgroundColor: theme.colors.black2[5],
-    border: `1px solid ${theme.colors.grey[5]}`,
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: '1px solid transparent',
+    '&:hover': {
+      background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #0051ff, #00ccff) border-box`,
+      color: theme.colors.white[5],
+    },
   },
   root: {
     border: 'none',

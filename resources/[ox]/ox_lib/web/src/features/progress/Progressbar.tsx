@@ -9,7 +9,8 @@ const useStyles = createStyles((theme) => ({
   container: {
     width: 350,
     height: 45,
-    border: `1px solid ${theme.colors.grey[5]}`,
+    background: `linear-gradient(${theme.colors.black[5]}, ${theme.colors.black[5]}) padding-box, linear-gradient(90deg, #00ccff, #0051ff) border-box`,
+    border: '1px solid transparent',
     borderRadius: theme.radius.sm,
     backgroundColor: theme.colors.black2[5],
     overflow: 'hidden',
@@ -32,9 +33,35 @@ const useStyles = createStyles((theme) => ({
   bar: {
     height: '40%',
     borderRadius: theme.radius.sm,
-    background: `linear-gradient(to right, ${theme.colors.blue[5]}, ${theme.colors.pink[5]})`,
+    background: `linear-gradient(to right, #00ccff, #0051ff)`,
     transition: 'width 0.5s ease',
+    position: 'relative',
+    zIndex: 1, // <-- put the bar behind the track
+
   },
+  track: {
+    position: 'absolute',
+    top: 'calc(30% - 0.5px)',
+    left: 15,
+    right: 15,
+    height: 'calc(40% + 1px)',
+    borderRadius: theme.radius.sm,
+    background: 'transparent',
+    pointerEvents: 'none',
+    zIndex: 2,
+    '&::before': {
+      content: '""',
+      position: 'absolute',
+      inset: 0,
+      borderRadius: theme.radius.sm,
+      padding: 1, // thickness of the border
+      background: `linear-gradient(90deg, #0051ff, #00ccff)`,
+      WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+      WebkitMaskComposite: 'xor',
+      maskComposite: 'exclude',
+    },
+  },
+
   labelWrapper: {
     display: 'flex',
     alignItems: 'center',
@@ -74,12 +101,17 @@ const Progressbar: React.FC = () => {
           <Text className={classes.label}>{label}</Text>
         </Box>
         <Box className={classes.container}>
+          {/* Inner track border */}
+          <Box className={classes.track} />
+
+          {/* Existing animated progress bar */}
           <Box
             className={classes.bar}
             onAnimationEnd={() => setVisible(false)}
             sx={{
               animation: 'progress-bar linear',
-              animationDuration: `${duration}ms`,
+              // animationDuration: `${duration}ms`,
+              animationDuration: `5000ms`,
             }}
           />
         </Box>
